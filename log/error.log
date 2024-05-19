@@ -1,0 +1,16 @@
+[Thu May 16 16:12:27.163966 2024] [ssl:warn] [pid 1] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.0.13 30 Jan 2024 (OpenSSL 3.0.11 19 Sep 2023), version currently loaded is 0x300000B0) - may result in undefined or erroneous behavior
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu May 16 16:12:27.185128 2024] [ssl:warn] [pid 1] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.0.13 30 Jan 2024 (OpenSSL 3.0.11 19 Sep 2023), version currently loaded is 0x300000B0) - may result in undefined or erroneous behavior
+[Thu May 16 16:12:27.186920 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.59 (Debian) PHP/8.1.28 OpenSSL/3.0.11 configured -- resuming normal operations
+[Thu May 16 16:12:27.187508 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu May 16 16:12:39.625023 2024] [autoindex:error] [pid 17] [client 192.168.65.1:28317] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Thu May 16 16:18:16.757345 2024] [autoindex:error] [pid 19] [client 192.168.65.1:28783] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Thu May 16 16:18:23.724644 2024] [autoindex:error] [pid 19] [client 192.168.65.1:28783] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Thu May 16 16:23:44.531472 2024] [autoindex:error] [pid 20] [client 192.168.65.1:29233] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Thu May 16 16:37:11.041907 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Thu May 16 16:37:19.735832 2024] [ssl:warn] [pid 1] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.0.13 30 Jan 2024 (OpenSSL 3.0.11 19 Sep 2023), version currently loaded is 0x300000B0) - may result in undefined or erroneous behavior
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.4. Set the 'ServerName' directive globally to suppress this message
+[Thu May 16 16:37:19.749410 2024] [ssl:warn] [pid 1] AH01882: Init: this version of mod_ssl was compiled against a newer library (OpenSSL 3.0.13 30 Jan 2024 (OpenSSL 3.0.11 19 Sep 2023), version currently loaded is 0x300000B0) - may result in undefined or erroneous behavior
+[Thu May 16 16:37:19.751781 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.59 (Debian) PHP/8.1.28 OpenSSL/3.0.11 configured -- resuming normal operations
+[Thu May 16 16:37:19.755343 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu May 16 16:37:52.434477 2024] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
