@@ -10,10 +10,16 @@ services:
         working_dir: /var/www/
         volumes:
             - ./:/var/www
+            - ./resources/docs:/var/www/resources/docs
         depends_on:
             - redis
         networks:
             - laravel
+        ports:
+            - "80:80"
+            - "9000:9000"
+            - "5173:5173"
+            - "9003:9003"
 
     # nginx
     nginx:

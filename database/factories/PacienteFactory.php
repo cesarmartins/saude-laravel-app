@@ -2,26 +2,19 @@
 
 namespace Database\Factories;
 
+use App\Models\Paciente;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Paciente>
- */
 class PacienteFactory extends Factory
 {
-
     protected $model = Paciente::class;
 
-    /**
-     * @return array|mixed[]
-     */
-    public function definition(): array
+    public function definition()
     {
         return [
             'pac_nome' => $this->faker->name,
-            'pac_dataNascimento' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
-            'created_at' => now(),
-            'updated_at' => now(),
+            'pac_dataNascimento' => $this->faker->date
         ];
     }
 }
