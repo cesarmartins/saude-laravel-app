@@ -17,12 +17,38 @@ git clone https://github.com/cesarmartins/saude-laravel-app.git
 composer install
 ```
 
-3. Execução
-   Para executar a aplicação, você pode utilizar o servidor web embutido do Laravel:
+3. Docker
+   Para executar a aplicação, você pode utilizar inicializar o docker:
 
 ```bash
-php artisan serve
+docker-compose up -d
 ```
+
+4. Instalando as dependencias
+   acesse o contener:
+
+```bash
+docker-compose exec app bash
+```
+
+5. Instalando as dependencias do PHP
+
+```bash
+composer install
+```
+
+6. Run database migrations
+
+```bash
+php artisan migrate
+```
+
+7. Run database seeder
+
+```bash
+php artisan db:seed
+```
+
 
 ## Testes
 
@@ -32,19 +58,18 @@ Para executar os testes unitários (PHPUnit) na aplicação:
 ```bash
 composer require --dev phpunit/phpunit
 ```
-2. Copie o arquivo "phpunit.xml.dist" e retire a extenção ".dist"
-```bash
-cp phpunit.xml.dist phpunit.xml
-```
-3. e adicione no arquivo "phpunit.xml" dentro do nó <PHP>
-```bash
-<env name="KERNEL_CLASS" value="App\Kernel" />
-```
+
 3. basta executar o seguinte comando no terminal:
 ```bash
 ./vendor/bin/phpunit
 ```
 Obs. Certifique-se de estar no diretório raiz do seu projeto ao executar este comando.
+
+
+You're ready to go! Visit in your browser and Postman, and login with:
+
+Username: isaias.feeney@example.net
+Password: password
 
 
 ## Autor
